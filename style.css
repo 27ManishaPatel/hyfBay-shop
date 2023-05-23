@@ -1,0 +1,87 @@
+body {
+ text-align: center;
+ background-color: rgb(173, 201, 170);
+ width: 70%;
+ margin: auto;
+ border: 1px solid black;
+}
+header, .wrapper-2{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.wrapper-image{
+  width: 250px;
+  border-radius: 10%;
+  box-shadow: 2px 2px 2px 2px rgb(108, 105, 105);
+  
+}
+h1, .para{
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 2px 1px rgb(217, 150, 150);
+}
+
+form {
+  width: 99%;
+  border-radius: 15px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+form input {
+  margin: 20px;
+  width: 70%;
+  background-color: rgb(173, 201, 170);
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+
+.btn {
+text-align: left;
+width: 70%;
+}
+.btn input{
+  background-color: rgb(173, 201, 170);
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 50%;
+  padding: 5px;
+  font-size: 18px;
+  margin: 10px;
+}
+.btn button{
+  background-color: rgb(112, 159, 106);
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 20px;
+  width: 30%;
+  padding: 5px;
+  font-size: 18px;
+  margin: 10px;
+}
+.para{
+  font-size: 35px;
+}
+.all-products{
+  width: 90%;
+  margin: auto;
+}
+
+.my-products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  margin: auto;
+  
+}
+.my-products-list {
+  background-color: rgb(157, 190, 153);
+  width: 200px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 5px;
+}
+

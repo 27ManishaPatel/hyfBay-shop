@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>HyfBay-Shop </title>
+</head>
+
+<body>
+  <!--hyfBay - get the okay'est products here-->
+  <header>
+    <div>
+      <img src="./images/shop.jpg" class="wrapper-image">
+    </div>
+    <div>
+      <h1 class="heading">Hyf-Bay Shop</h1>
+      <form>
+        <i class="fa fa-search"></i>
+        <input id="searchProducts" type="text" class="search-input" placeholder="Type here to search">
+      </form>
+    </div>
+
+  </header>
+  <main>
+    <div id="divExe3">
+      <div class="wrapper-2">
+        <div class="btn">
+          <input type="tel" id="minPrice" placeholder="Enter min-price">
+          <button for="minPrice" class="btn-min-price">Cheap Products</button>
+          <br>
+          <input type="tel" id="maxPrice" placeholder="Enter max-price">
+          <button for="maxPrice" class="btn-max-price">Expensive Products</button>
+        </div>
+      </div>
+
+      <div class="all-products">
+        <p id="displayOutput" class="para">Products
+        <ul id="product-ul"></ul>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script src="movies.js"></script>
+  <script src="script.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
