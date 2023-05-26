@@ -1,7 +1,4 @@
-console.log('Script loaded');
-
 const products = getAvailableProducts();
-console.log(products);
 const displayOutput = document.getElementById('displayOutput');
 const searchType = document.getElementById('searchProducts');
 const cheapBtn = document.querySelector(".btn-min-price")
@@ -11,8 +8,6 @@ const expensiveProducts = document.getElementById("maxPrice")
 
 const myProducts = document.querySelector("ul");
 myProducts.setAttribute("class", "my-products");
-
-console.log(searchType);
 function renderProducts(products) {
 
     for (let i = 0; i < products.length; i++) {
@@ -22,7 +17,11 @@ function renderProducts(products) {
 
         const title = document.createElement("li");
         title.setAttribute("class", "my-products-list-list")
-        title.style.fontWeight = "bold"
+        title.style.fontWeight = "bold";
+
+        const image =  document.createElement("img");
+        image.setAttribute("class", "my-products-list-image")
+        image.setAttribute("src", "https://source.unsplash.com/random/100x100/?img=20")
 
         const price = document.createElement("li");
         price.setAttribute("class", "my-products-list-list")
@@ -35,11 +34,11 @@ function renderProducts(products) {
         rate.innerText = `Rating: ${products[i].rating}`;
 
         myProductList.appendChild(title);
+        myProductList.appendChild(image);
         myProductList.appendChild(price);
         myProductList.appendChild(rate);
 
         myProducts.appendChild(myProductList);
-        console.log(myProductList);
     }
 };
 renderProducts(products);
@@ -74,9 +73,7 @@ cheapBtn.addEventListener("click", function () {
 
 expensiveBtn.addEventListener("click", function () {
     const inputPrice2 = +expensiveProducts.value;
-    console.log(inputPrice2)
     const expensiveRander = products.filter(list => list.price > inputPrice2)
-    console.log(expensiveRander)
     // const expensiveRander2 = expensiveRander.sort((a, b) => b.price - a.price);
     myProducts.innerHTML = "";
     renderProducts(expensiveRander);

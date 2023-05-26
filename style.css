@@ -81,9 +81,19 @@ width: 70%;
 .my-products-list {
   background-color: rgb(157, 190, 153);
   width: 200px;
+  height: 200px;
   border: 1px solid black;
   margin: 10px;
   padding: 5px;
+}
+.my-products-list-list{
+  margin-top: 5px;
+}
+.my-products-list-image{
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 600px){
@@ -139,5 +149,9 @@ width: 70%;
      width: 150px;
      margin: 5px;
    }
+   .my-products-list-image{
+    width: 130px;
+    height: 80px;
+  }
    
 }
