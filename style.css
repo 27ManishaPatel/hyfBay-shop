@@ -70,6 +70,8 @@ width: 70%;
 }
 
 .my-products {
+  margin: auto;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
@@ -91,7 +93,11 @@ width: 70%;
    header, .wrapper-2{
      flex-direction: column;
    }
- 
+   .wrapper-2{
+    width: 70%;
+    margin: auto;
+    padding-top: 40px;
+   }
    .wrapper-image{
      width: 200px;  
    }
