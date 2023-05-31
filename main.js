@@ -21,7 +21,7 @@ function renderProducts(products) {
 
         const image =  document.createElement("img");
         image.setAttribute("class", "my-products-list-image")
-        image.setAttribute("src", "https://source.unsplash.com/random/100x100/?img=20")
+        image.setAttribute("src", "./images/products.jpg")
 
         const price = document.createElement("li");
         price.setAttribute("class", "my-products-list-list")
