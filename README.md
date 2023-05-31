@@ -17,4 +17,5 @@ To use the hyfBay-shop, follow these steps:
 To open the app in a web browser click here. Link : https://htmlpreview.github.io/?https://github.com/27ManishaPatel/hyfBay-shop/blob/master/index.html
 Enter product's name  in the input field to filter the products by their name or enter minimum or maximum price  in the input field and,
 Click the "Cheap products" or "expensive products"  button to receive Cheap or expensive products.
+
 Make sure you have an internet connection to access the hyfBay-shop app.
